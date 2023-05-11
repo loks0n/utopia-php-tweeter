@@ -1,0 +1,28 @@
+{
+  "name": "loks0n/utopia-php-tweeter",
+  "description": "A simple tweet HTTP server built with utopia",
+  "type": "project",
+  "license": "MIT",
+  "scripts": {
+    "start": "php -S localhost:8080 -t src",
+    "test": "phpunit tests/tweettest.php"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/",
+      "App\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "loks0n",
+      "email": "22452787+loks0n@users.noreply.github.com"
+    }
+  ],
+  "require": {
+    "utopia-php/framework": "^0.28.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.1"
+  }
+}
